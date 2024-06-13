@@ -4,6 +4,15 @@
 pragma solidity ^0.8.0;
 
 contract DynamicArray {
+
+     /*General syntax for mapping
+
+      type[] public/ internal/ private  arrayName;
+    
+    */
+
+
+
     // Declare a dynamic array of integers
     uint[] public numbers;
 

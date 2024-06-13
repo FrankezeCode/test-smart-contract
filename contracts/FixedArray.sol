@@ -3,6 +3,19 @@
 pragma solidity ^0.8.26;
 
 contract FixedSizeArray {
+
+    /*General syntax for mapping
+
+    type[size] public/ internal/ private  arrayName;
+
+    OR
+
+    type[size] public/ internal/ private  arrayName = [values];
+    
+    */
+
+
+
     // Declare a fixed-size array of integers with 3 elements
     uint[3] public numbers;
     uint[3] public oddNumbers =[5,10,15];
@@ -18,6 +31,17 @@ contract FixedSizeArray {
         numbers[2] = 3;
 
         evenNumbers = [2, 4 ,6 ];
+    }
+
+
+    //Function to insert value into the numbers array
+    function insertElement(uint index, uint _numbers) public{
+         numbers[index] = _numbers;
+    }
+    
+    //Function to return all the element of numbers array
+    function getAllelement() public view returns (uint[3] memory){
+        return numbers;
     }
 
     // Function to get an element at a specific index

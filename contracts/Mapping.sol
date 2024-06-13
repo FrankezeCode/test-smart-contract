@@ -4,6 +4,12 @@ pragma solidity ^0.8.26;
 
 contract Mapping {
 
+    /*General syntax for mapping
+
+    mapping(keyType => valueType) public/ internal/ private mappingName;
+    
+    */
+
     
     // Define a mapping from address to uint
     mapping(address => uint) public   balances;
