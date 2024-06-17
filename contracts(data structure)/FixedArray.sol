@@ -4,7 +4,7 @@ pragma solidity ^0.8.26;
 
 contract FixedSizeArray {
 
-    /*General syntax for mapping
+    /*General syntax for fixed size array
 
     type[size] public/ internal/ private  arrayName;
 
